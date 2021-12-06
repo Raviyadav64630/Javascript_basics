@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <title>Login Page</title>
+    <head>
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <center><h1>Welcome to Login Page</h1></center>
+        <div class="login">
+            Username:<br><input type="text" id="username">
+            <br><br>
+            Password:<br><input type="password" id="password">
+            <br><br>
+            <button onclick="login()">Submit</button>
+        </div>
+<script type="text/javascript">
+    function login()
+    {
+        var uname=document.getElementById('username').value;
+        var pword=document.getElementsByName('password').value;
+
+        if(uname=="AB" && pword=="123")
+        {
+            location.assign("file:///C:/Users/asus/Desktop/Login%20Page%20JS/page.html");
+        }
+        else if (uname == null || pword == "")
+         {
+                alert("Please enter the password.");
+                return false;
+         }
+        else
+        {
+            window.alert("Wrong Credentials");
+        }
+    }
+
+</script>
+    </body>
+</html>
